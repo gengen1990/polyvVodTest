@@ -3,11 +3,12 @@
 buildscript {
     repositories {
 	    //阿里云的镜像库
+        google()
         maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -16,6 +17,7 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
 	    //阿里云的镜像库
         maven {url "http://maven.aliyun.com/nexus/content/groups/public/"}
         jcenter()
