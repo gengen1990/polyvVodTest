@@ -124,6 +124,9 @@ public class PolyvMainActivity extends Activity implements OnClickListener {
             }
         });
     }
+    private void test(){
+
+    }
 
     private void initView() {
         if (!PolyvVlmsTestData.USERID.equals(PolyvSDKClient.getInstance().getUserId())) {
@@ -158,6 +161,7 @@ public class PolyvMainActivity extends Activity implements OnClickListener {
         iv_uplaod.setOnClickListener(this);
         iv_download.setOnClickListener(this);
         tv_reload.setOnClickListener(this);
+        test();
     }
 
     @Override
