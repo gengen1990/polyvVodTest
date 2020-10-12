@@ -57,6 +57,7 @@ public class PolyvMainActivity extends Activity implements OnClickListener {
     private PolyvPermission polyvPermission = null;
     private PolyvCoursesInfo.Course course = null;
 
+    private int j=1,i=0;
     private void findIdAndNew() {
         gv_hc = (GridView) findViewById(R.id.gv_hc);
         iv_online = (ImageView) findViewById(R.id.iv_online);
@@ -65,10 +66,11 @@ public class PolyvMainActivity extends Activity implements OnClickListener {
         pb_loading = (ProgressBar) findViewById(R.id.pb_loading);
         tv_empty = (TextView) findViewById(R.id.tv_empty);
         tv_reload = (TextView) findViewById(R.id.tv_reload);
-        srl_bot = (PolyvSimpleSwipeRefreshLayout) findViewById(R.id.srl_bot);
+//        srl_bot = (PolyvSimpleSwipeRefreshLayout) findViewById(R.id.srl_bot);
         tv_guide = (TextView) findViewById(R.id.tv_guide);
         lists = new ArrayList<>();
         vlmsHelper = new PolyvVlmsHelper();
+        j= j/i;
     }
 
     private void getCoursesDetail() {
