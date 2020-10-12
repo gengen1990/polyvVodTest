@@ -157,7 +157,8 @@ public class PolyvPlayerAuditionView extends RelativeLayout {
                 if (PolyvPlayerAuditionView.this.questionVO.getWrongTime() <= 0) {
                     handler.sendEmptyMessage(CLOSE_QUESTION);
                 } else {
-                    handler.sendEmptyMessageDelayed(CLOSE_QUESTION, PolyvPlayerAuditionView.this.questionVO.getWrongTime() * 1000);
+					long timeMs = PolyvPlayerAuditionView.this.questionVO.getWrongTime() * 1000L;
+                    handler.sendEmptyMessageDelayed(CLOSE_QUESTION, timeMs);
                 }
             }
         });

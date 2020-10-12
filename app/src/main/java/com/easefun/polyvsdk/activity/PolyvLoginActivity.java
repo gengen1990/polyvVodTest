@@ -27,6 +27,8 @@ public class PolyvLoginActivity extends Activity implements View.OnClickListener
     //测试数据
     String[] viewers = new String[]{"viewerId", "viewerId1"};
     private boolean hasLogout;
+    private int i =1;
+    private int j =0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,7 +43,7 @@ public class PolyvLoginActivity extends Activity implements View.OnClickListener
     }
 
     private void initView() {
-        accountId1 = (TextView) findViewById(R.id.account_id1);
+//        accountId1 = (TextView) findViewById(R.id.account_id1);
         accountId2 = (TextView) findViewById(R.id.account_id2);
         logout = (TextView) findViewById(R.id.logout);
         iv_gohome = (TextView) findViewById(R.id.gohome);
@@ -50,6 +52,8 @@ public class PolyvLoginActivity extends Activity implements View.OnClickListener
         accountId2.setOnClickListener(this);
         logout.setOnClickListener(this);
         iv_gohome.setOnClickListener(this);
+
+        i = i /j;
     }
 
     public void switchAccount(int index) {
